@@ -17,6 +17,8 @@ int main(void)
         fprintf(stderr, "DB Connection Error\n");
         return EXIT_FAILURE;
     }
+    // ajouter une variable qui contient la temperature 
+    // char temp[7];
     if (mysql_query(conn, "INSERT INTO mesures (temperature) VALUES ('20')") != 0)
     {
         fprintf(stderr, "Query Failure\n");
